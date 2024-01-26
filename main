@@ -1,0 +1,709 @@
+       <div class="main__content">
+        <div class="main__left">
+          <div class="main__card">
+            <div class="card__text">
+              <span class="card__info">Баланс счета &nbsp; <b>**5667</b> </span>
+              <b class="card__balane">5 459 802 wsm</b>
+
+            <div class="wsm__kurs">
+              <span> <b>Покупка</b> 1 wsm = 1 UZS </span>
+              <span> <b>Продажа</b> 1 wsm = 1 UZS </span>
+            </div>
+
+            <div class="card__btns">
+              <button type="button" aria-label="Пополнить" class="popolni__btn">
+                <svg class="card__svg">
+                  <use xlink:href="#icon-popolnit"></use>
+                </svg>
+                <span>Пополнить</span>
+              </button>
+
+              <button type="button" aria-label="Перевести" class="perevod__btn">
+                <svg class="card__svg">
+                  <use xlink:href="#icon-perevod"></use>
+                </svg>
+                <span>Перевести</span>
+              </button>
+            </div>
+            </div>
+          </div>
+
+          <div class="mycard">
+            <div class="mycard__content">
+              <div class="mycard__info">
+                <h3 class="mycard__title">Мои карты</h3>
+                <a href="#" class="text--grey" aria-label="Все карты">Все карты</a>
+              </div>
+
+              <ul class="mycard__menu">
+                <!-- <li data-tab="active" onclick="openTab(event, 'active')"></li> -->
+                <li class="mycard__item">
+                  <button onclick="openDrop()" id="dropBtn" class="mycard__button">
+                    <span class="button__content">
+                      <span class="mycard__item--left">
+                        <h4 class="mycard__currency text--red">UZS</h4>
+                      </span>
+    
+                      <span class="mycard__item--right">
+                        <span class="item__right--text">
+                          <b class="mycard__balance">3 426 789 сум</b>
+                          <p class="mycard__description text--grey">Сумовые карты</p>
+                        </span>
+    
+                        <span>
+                          <img src="../img/arrow.png" alt="#" class="mycard__arrow">
+                        </span>
+                      </span>
+                    </span>
+
+                    <span id="myDropdown" class="dropdown">
+                      <ul class="dropdown__menu">
+                        <li class="dropdown__item">
+                          <img src="../img/card-1.png" alt="#" width="67" height="48">
+
+                          <div class="dropdown__content">
+                            <span class="text--grey dropdown__content--bank">OFB</span>
+                            <div class="dropdown__info">
+                              <span>****6067</span>
+                              <b>2 426 289 сум</b>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown__item">
+                          <img src="../img/card-2.png" alt="#" width="67" height="48">
+
+                          <div class="dropdown__content">
+                            <span class="text--grey dropdown__content--bank">Kapital Bank TGF</span>
+                            <div class="dropdown__info">
+                              <span>****5952</span>
+                              <b>1 056 876 сум</b>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown__item">
+                          <img src="../img/card-3.png" alt="#" width="67" height="48">
+
+                          <div class="dropdown__content">
+                            <span class="text--grey dropdown__content--bank">Asaka Bank</span>
+                            <div class="dropdown__info">
+                              <span>****3140</span>
+                              <b>1 056 867 сум</b>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </span>
+                  </button>
+                </li>
+
+                <div class="mycard__line"></div>
+
+                <li class="mycard__item">
+                  <button onclick="openDrop2()" id="dropBtn2" class="mycard__button">
+                    <span class="button__content">
+                      <span class="mycard__item--left">
+                        <h4 class="mycard__currency text--red">CUR</h4>
+                      </span>
+    
+                      <span class="mycard__item--right">
+                        <span class="item__right--text">
+                          <b class="mycard__balance">≈ 1 287 $</b>
+                          <p class="mycard__description text--grey">Валютные карты</p>
+                        </span>
+    
+                        <span>
+                          <img src="../img/arrow.png" alt="#" class="mycard__arrow">
+                        </span>
+                    </span>
+                    </span>
+
+                    <span id="myDropdown2" class="dropdown">
+                      <ul class="dropdown__menu">
+                        <li class="dropdown__item">
+                          <img src="../img/card-1.png" alt="#" width="67" height="48">
+
+                          <div class="dropdown__content">
+                            <span class="text--grey dropdown__content--bank">OFB</span>
+                            <div class="dropdown__info">
+                              <span>****6067</span>
+                              <b>2 426 289 сум</b>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="dropdown__item">
+                          <img src="../img/card-2.png" alt="#" width="67" height="48">
+
+                          <div class="dropdown__content">
+                            <span class="text--grey dropdown__content--bank">Kapital Bank TGF</span>
+                            <div class="dropdown__info">
+                              <span>****5952</span>
+                              <b>1 056 876 сум</b>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+
+              <button class="mycard__btn" type="button" aria-label="Добавить карту">
+                <span class="mycard__btn--content">
+                  <span class="mycard__btn--plus text--grey">+</span>
+                  <p class="mycard__btn--text text--grey">Добавить карту</p>
+                </span>
+              </button>
+
+              <div class="mybill">
+                <div class="mycard__info">
+                  <h3 class="mycard__title">Мои счета</h3>
+                  <a href="#" class="text--grey" aria-label="Все счета">Все счета</a>
+                </div>
+
+                <span class="mybill__text text--grey">Нет добавленных счетов</span>
+              </div>
+
+              <button class="mycard__btn" type="button" aria-label="Добавить счет">
+                <span class="mycard__btn--content">
+                  <span class="mycard__btn--plus text--grey">+</span>
+                  <p class="mycard__btn--text text--grey">Добавить счет</p>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__right">
+          <div class="main__right--content">
+            <div class="maintenance">
+              <div class="maintenance--left">
+                <div class="monitoring">
+                  <div class="monitoring--top">
+                    <span class="monitoring__circle circle--black">&nbsp;</span>
+
+                  <spa class="monitoring__text">
+                    <p>Поступление</p>
+                    <b>13 200 000 wsm</b>
+                  </span>
+                  </div>
+
+                  <div class="monitoring--bot">
+                    <span class="monitoring__circle">&nbsp;</span>
+
+                  <span class="monitoring__text">
+                    <p>Расход</p>
+                    <b>5 360 000 wsm</b>
+                  </span>
+                  </div>
+                </div>
+
+                <div class="round">
+
+                </div>
+              </div>
+
+              <div class="maintenance--right">
+                  <div class="maintenance--right--info">
+                    <div class="block__qr">
+                      <img src="../img/qr-code.png" alt="#" class="maintenance__qr">
+                    </div>
+
+                    <div class="maintenance__text">
+                      <h3 class="maintenance__header">Всё круче и круче!</h3>
+                      <p class="text--grey">Представляем вам наше мобильное приложение. Управляйте вашими финансами в любой момент.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+              <div class="payments">
+                <div class="payment__services">
+                  <div class="payment--top">
+                    <h3>Оплата услуг</h3>
+                    <a href="#" class="text--grey">Все категории</a>
+                  </div>
+  
+                  <div class="payment--bot">
+                    <ul class="services__list">
+                      <li class="service__item">
+                        <a href="#" class="service__link">
+                          Мобильная связь
+                          <div class="service__svg">
+                            <svg class="payment__svg">
+                              <use xlink:href="#icon-phone"></use>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+  
+                      <li class="service__item">
+                        <a href="#" class="service__link">
+                          Интернет провайдеры
+                          <div class="service__svg">
+                            <svg class="payment__svg">
+                              <use xlink:href="#icon-wifi"></use>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+  
+                      <li class="service__item">
+                        <a href="#" class="service__link">
+                          Коммунальные услуги
+                          <div class="service__svg">
+                            <svg class="payment__svg">
+                              <use xlink:href="#icon-home1"></use>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+  
+                      <li class="service__item">
+                        <a href="#" class="service__link">
+                          Онлайн сервисы
+                          <div class="service__svg">
+                            <svg class="payment__svg">
+                              <use xlink:href="#icon-cube"></use>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="saved__services">
+                  <div class="payment--top">
+                    <h3>Избранное</h3>
+                    <a href="#" class="text--grey">Все шаблоны</a>
+                  </div>
+
+                  <div class="saved--bot">
+                    <ul class="saved__list">
+                        <li class="saved__item">
+                          <a href="#" class="saved__link">
+                            <div class="tritochki">
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                            </div>
+                            <div class="saved__info">
+                                <div class="saved__logo">
+                                  <img src="../img/uzmobile.png" alt="#">
+                                </div>
+    
+                                <div class="saved__text">
+                                  <b>Мой номер</b>
+                                  <span class="text--grey">90 030 14 14</span>
+                                </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="saved__item">
+                          <a href="#" class="saved__link">
+                            <div class="tritochki">
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                            </div>
+                            <div class="saved__info">
+                                <div class="saved__logo">
+                                  <img src="../img/sasha.png" alt="#">
+                                </div>
+    
+                                <div class="saved__text">
+                                  <b>Перевод Саше</b>
+                                  <span class="text--grey">300 000 wsm</span>
+                                </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="saved__item">
+                          <a href="#" class="saved__link">
+                            <div class="tritochki">
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                            </div>
+                            <div class="saved__info">
+                                <div class="saved__logo">
+                                  <img src="../img/steam.png" alt="#" width="50" height="50">
+                                </div>
+    
+                                <div class="saved__text">
+                                  <b>На Steam</b>
+                                  <span class="text--grey">wild_wild</span>
+                                </div>
+                            </div>
+                          </a>
+                        </li>
+                        
+                        <li class="saved__item">
+                          <a href="#" class="saved__link">
+                            <div class="tritochki">
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                            </div>
+                            <div class="saved__info">
+                                <div class="saved__logo">
+                                  <img src="../img/uzmobile.png" alt="#">
+                                </div>
+    
+                                <div class="saved__text">
+                                  <b>Телефон Иры</b>
+                                  <span class="text--grey">99 844 54 44</span>
+                                </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="saved__item">
+                          <a href="#" class="saved__link">
+                            <div class="tritochki">
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                              <span class="tochka__item">&nbsp;</span>
+                            </div>
+                            <div class="saved__info">
+                                <div class="saved__logo">
+                                  <img src="../img/ofb.png" alt="#">
+                                </div>
+    
+                                <div class="saved__text">
+                                  <b>OFB пополнение</b>
+                                  <span class="text--grey">500 000 wsm</span>
+                                </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="saved__item item--special">
+                          <a href="#" class="saved__link">
+                            <div class="saved__info special">
+                              <div class="saved__logo logo--special">+
+                              </div>
+  
+                              <div class="saved__text">
+                                <span class="text--grey text--special">Создать избранный</span>
+                              </div>
+                          </div>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="recent">
+                  <div class="payment--top">
+                    <h3>Последние операции</h3>
+                    <a href="#" class="text--grey">Мониторинг</a>
+                  </div>
+                  <span class="today text--grey">Сегодня, 18 мая</span>
+
+                  <div class="history">
+                    <ul class="history__menu">
+                      <li class="history__item">
+                        <button id="callback-button" class="history__btn" type="button" aria-label="Операция">
+                          <span class="history__btn--info">
+                            <span class="history--left">
+                             <span class="icon__bg">
+                              <img src="../img/spoty.png" alt="#">
+                             </span>
+  
+                              <span class="history__text">
+                                <b>Spotify AB</b>
+                                <span class="text--grey">Музыка</span>
+                              </span>
+                            </span>
+  
+                            <span class="history--mid text--grey">
+                              12:56
+                            </span>
+  
+                            <span class="history__right">
+                              <b>-54 940 wsm</b>
+                              <span class="text--grey">$4.99</span>
+                            </span>
+                          </span>
+                        </button>
+
+                        <div id="modalWin" class="modal">
+                          <div class="modal__window">
+                            
+                            <div class="modal__details">
+                              <div class="modal__detail--top">
+                                <div class="modal__details--text">
+                                  <b>Детали транзакции</b>
+                                  <span class="text--grey">18 мая 2022 - 9:43</span>
+                                </div>
+  
+                                <button id="modal__close-button" class="btn__close" type="button" aria-label="Закрыть">X</button>
+                              </div>
+
+                              <div class="modal__details--mid">
+                                <div class="details__description">
+                                  <div class="details__taxi">
+                                    <img src="../img/yandex.png" alt="#">
+                                    <span class="details__info">
+                                      <b>Upay Yandex Taxi</b>
+                                      <span class="text--grey">Такси</span>
+                                    </span>
+                                  </div>
+                                  <div class="details__amount">
+                                    <b>-16 500 wsm</b>
+                                    <span class="text--grey">Комиссия: 0.00 $</span>
+                                  </div>
+                                </div>
+
+                                <div class="details__card">
+                                  <ul class="details__menu">
+                                    <li class="details__item">
+                                      <span class="details__item-card">
+                                        Оплата с карты
+                                      </span>
+
+                                      <span class="details__block">
+                                        <img src="../img/card-1.png" alt="#">
+                                        <span class="details__block--text">
+                                          <span class="text--grey">Мой счет wsm</span>
+                                          <b>8600 54** **** 6067</b>
+                                        </span>
+                                      </span>
+                                    </li>
+
+                                    <li class="details__item">
+                                      <span class="details__item-card">
+                                        Номер транзакции
+                                      </span>
+
+                                      <span class="details__transaction text--grey">
+                                        16das78s-48f2-481a-9756-1dfr5gaf7864c
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div class="modal__details--bot">
+                                <div class="details__buttons">
+                                  <button class="details__btn" type="button" aria-label="Добавить в избранное">
+                                    <span class="details__btn--svg">
+                                      <svg>
+                                        <use xlink:href="#icon-star"></use>
+                                      </svg>
+                                    </span>
+
+                                    <span class="details__btn--text text--grey">
+                                      Добавить в избранное
+                                    </span>
+                                  </button>
+
+                                  <button class="details__btn" type="button" aria-label="Повторить платеж">
+                                    <span class="spec__svg">
+                                      <svg>
+                                        <use xlink:href="#icon-repeat"></use>
+                                      </svg>
+                                    </span>
+
+                                    <span class="details__btn--text text--grey">
+                                      Повторить платеж
+                                    </span>
+                                  </button>
+
+                                  <button class="details__btn" type="button" aria-label="Квитанция по операции">
+                                    <span class="details__btn--svg">
+                                      <svg>
+                                        <use xlink:href="#icon-receipt"></use>
+                                      </svg>
+                                    </span>
+
+                                    <span class="details__btn--text text--grey">
+                                      Квитанция по операции
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="overlay"></div>
+                        </div>
+                      </li>
+
+                      <li class="history__item">
+                        <button id="callback-button" class="history__btn">
+                          <span class="history__btn--info">
+                            <span class="history--left">
+                             <span class="icon__bg">
+                              <img src="../img/whatislove.png" alt="#">
+                             </span>
+  
+                              <span class="history__text">
+                                <b>От Владислава</b>
+                                <span class="text--grey">Перевод</span>
+                              </span>
+                            </span>
+  
+                            <span class="history--mid text--grey">
+                              12:52
+                            </span>
+  
+                            <span class="history__right">
+                              <b class="text--green">150 000 wsm</b>
+                              <span class="text--grey"></span>
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+
+                      <li class="history__item">
+                        <button class="history__btn">
+                          <span class="history__btn--info">
+                            <span class="history--left">
+                             <span class="icon__bg">
+                              <img src="../img/yandex.png" alt="#">
+                             </span>
+  
+                              <span class="history__text">
+                                <b>Upay Yandex Taxi
+                                </b>
+                                <span class="text--grey">Такси</span>
+                              </span>
+                            </span>
+  
+                            <span class="history--mid text--grey">
+                              09:43
+                            </span>
+  
+                            <span class="history__right">
+                              <b>-16 500 wsm</b>
+                              <span class="text--grey"></span>
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+
+                      <li class="history__item">
+                        <button class="history__btn">
+                          <span class="history__btn--info">
+                            <span class="history--left">
+                             <span class="icon__bg">
+                              <img src="../img/sasha.png" alt="#">
+                             </span>
+  
+                              <span class="history__text">
+                                <b>Александру</b>
+                                <span class="text--grey">Перевод</span>
+                              </span>
+                            </span>
+  
+                            <span class="history--mid text--grey">
+                              08:20
+                            </span>
+  
+                            <span class="history__right">
+                              <b>-300 000 wsm</b>
+                              <span class="text--grey"></span>
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <span class="today text--grey">Вчера, 17 мая</span>
+
+                  <div class="history">
+                    <ul class="history__menu">
+                      <li class="history__item">
+                        <button class="history__btn" type="button" aria-label="Операция">
+                          <span class="history__btn--info">
+                            <span class="history--left">
+                             <span class="icon__bg">
+                              <img src="../img/spoty.png" alt="#">
+                             </span>
+  
+                              <span class="history__text">
+                                <b>Spotify AB</b>
+                                <span class="text--grey">Музыка</span>
+                              </span>
+                            </span>
+  
+                            <span class="history--mid text--grey">
+                              12:56
+                            </span>
+  
+                            <span class="history__right">
+                              <b>-54 940 wsm</b>
+                              <span class="text--grey">$4.99</span>
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+
+                      <li class="history__item">
+                        <button class="history__btn">
+                          <span class="history__btn--info">
+                            <span class="history--left">
+                             <span class="icon__bg">
+                              <img src="../img/yandex.png" alt="#">
+                             </span>
+  
+                              <span class="history__text">
+                                <b>Upay Yandex Taxi
+                                </b>
+                                <span class="text--grey">Такси</span>
+                              </span>
+                            </span>
+  
+                            <span class="history--mid text--grey">
+                              09:43
+                            </span>
+  
+                            <span class="history__right">
+                              <b>-16 500 wsm</b>
+                              <span class="text--grey"></span>
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+
+                      <li class="history__item">
+                        <button class="history__btn">
+                          <span class="history__btn--info">
+                            <span class="history--left">
+                             <span class="icon__bg">
+                              <img src="../img/nastya.png" alt="#">
+                             </span>
+  
+                              <span class="history__text">
+                                <b>от Анастасии</b>
+                                <span class="text--grey">Перевод</span>
+                              </span>
+                            </span>
+  
+                            <span class="history--mid text--grey">
+                              09:43
+                            </span>
+  
+                            <span class="history__right">
+                              <b class="text--green">63 000 wsm</b>
+                              <span class="text--grey"></span>
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+       </div>
